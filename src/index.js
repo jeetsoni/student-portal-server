@@ -5,6 +5,10 @@ const colors = require('colors');
 const errorHandler = require('./middleware/error');
 var cookieParser = require('cookie-parser');
 const morgan = require('morgan');
+const dotenv = require('dotenv');
+
+//Load env vars
+dotenv.config({ path: '../config/dev.env' });
 
 const app = express();
 
